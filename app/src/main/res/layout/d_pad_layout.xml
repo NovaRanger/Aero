@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Current Command Section -->
+    <LinearLayout
+        android:id="@+id/currentCommandSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentCommandLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Command: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/currentCommandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Next Command Section -->
+    <LinearLayout
+        android:id="@+id/nextCommandSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentCommandSection"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nextCommandLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Command: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nextCommandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextCommandSection"
+        android:orientation="vertical">
+
+        <!-- Up Button -->
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UP" />
+
+        <!-- Left and Right Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leftButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LEFT" />
+
+            <Button
+                android:id="@+id/rightButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RIGHT" />
+
+        </LinearLayout>
+
+        <!-- Down Button -->
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOWN" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
