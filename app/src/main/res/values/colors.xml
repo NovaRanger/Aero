@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="logoColor">#13D1DD</color>
+    <color name="orangeButton">#F77B57</color>
+    <color name="arrowColor">#3DFF15</color>
+    <color name="backgroundColor">#151938</color>
 </resources>

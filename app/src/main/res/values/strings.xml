@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">group-project</string>
+    <string name="app_name">AERO</string>
+    <!--text used within app-->
+
+    <!--content descriptions-->
+    <string name="cd_aero">aero logo</string>
+    <string name="cd_astronaut">astronaut image</string>
+    <string name="cd_play">play</string>
+    <string name="cd_help">help</string>
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HELEN - LAYOUT FOR STARTACTIVITY -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/space_bg"
+    tools:context=".StartActivity">
+
+    <!-- AERO LOGO DISPLAY -->
+    <ImageView
+        android:id="@+id/aeroIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/start_aero_logo"
+        android:contentDescription="@string/cd_aero" />
+
+    <!-- ASTRONAUT PIXEL IMAGE -->
+    <ImageView
+        android:id="@+id/astronaut"
+        android:layout_width="179dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aeroIcon"
+        android:src="@drawable/start_astronaut"
+        android:contentDescription="@string/cd_astronaut"/>
+
+    <!-- IMAGE BUTTONS -->
+    <ImageButton
+        android:id="@+id/playButton"
+        style="@style/StartPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/astronaut"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/orangeButton"
+        android:src="@drawable/start_button_play"
+        android:contentDescription="@string/cd_play"
+        android:onClick="onStartGameClick"
+        />
+
+    <ImageButton
+        android:id="@+id/helpButton"
+        style="@style/StartPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/playButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/start_button_help"
+        android:contentDescription="@string/cd_help"
+        android:onClick="onHelpClick"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
