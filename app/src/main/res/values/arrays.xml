@@ -1,16 +1,42 @@
 <resources>
-    <array name="command_sequence">
+        <string-array name="command_sequence_arrays">
+            <item>command_sequence_1</item>
+            <item>command_sequence_2</item>
+            <item>command_sequence_3</item>
+            <item>command_sequence_4</item>
+            <item>command_sequence_5</item>
+            <item>command_sequence_6</item>
+            <item>command_sequence_7</item>
+        </string-array>
+    <array name="command_sequence_1">
         <item>UP</item>
         <item>DOWN</item>
         <item>DOWN</item>
         <item>RIGHT</item>
         <item>LEFT</item>
     </array>
-    <array name="next_command_sequence">
-        <item>UP</item>
-        <item>DOWN</item>
-        <item>DOWN</item>
+    <array name="command_sequence_2">
         <item>RIGHT</item>
         <item>LEFT</item>
+    </array>
+    <array name="command_sequence_3">
+        <item>LEFT</item>
+        <item>LEFT</item>
+    </array>
+    <array name="command_sequence_4">
+        <item>DOWN</item>
+        <item>LEFT</item>
+    </array>
+    <array name="command_sequence_5">
+        <item>LEFT</item>
+        <item>DOWN</item>
+    </array>
+    <array name="command_sequence_6">
+        <item>RIGHT</item>
+        <item>DOWN</item>
+    </array>
+    <array name="command_sequence_7">
+        <item>DOWN</item>
+        <item>DOWN</item>
     </array>
 </resources>
