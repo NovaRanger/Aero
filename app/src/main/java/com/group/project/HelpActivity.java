@@ -25,7 +25,7 @@ public class HelpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(HelpActivity.this,SettingsActivity.class);
+                Intent intent = new Intent(HelpActivity.this, SettingsActivity.class);
                 startActivity(intent);
 
 
