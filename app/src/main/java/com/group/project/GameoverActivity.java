@@ -28,7 +28,7 @@ public class GameoverActivity extends AppCompatActivity {
     }
 
     public void onMenuClick(View view) {
-        Intent intent = new Intent(this, HelpActivity.class);
+        Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
     }
 }
