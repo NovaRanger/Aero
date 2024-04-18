@@ -10,13 +10,13 @@
     tools:context=".ColorActivity">
 
     <ImageView
-        android:id="@+id/aeroIcon"
+        android:id="@+id/colorHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="100dp"
         android:layout_marginTop="60dp"
-        android:contentDescription="@string/cd_aero"
-        android:src="@drawable/start_aero_logo"
+        android:contentDescription="@string/cd_colors"
+        android:src="@drawable/settings_header_colors"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

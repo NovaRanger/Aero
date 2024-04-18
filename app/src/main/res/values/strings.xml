@@ -7,6 +7,9 @@
     <string name="cd_astronaut">astronaut image</string>
     <string name="cd_play">play</string>
     <string name="cd_help">help</string>
+    <string name="cd_settings">settings</string>
+    <string name="cd_colors">colors</string>
+    <string name="cd_credits">credits</string>
     <string name="Replay" />
     <string name="gameOver" />
     <string name="Menu" />
