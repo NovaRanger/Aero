@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LinearLayout buttonLayout;
     private String[] currentCommandSequence; // Current command sequence array
     private int commandIndex = 0;
+    private int score = 0; // Declaring the score variable
 
     private Button upButton, downButton, leftButton, rightButton;
-    private TextView currentCommandTextView;
+    private TextView currentCommandTextView, scoreTextView; // Initializing to display the score
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonLayout = findViewById(R.id.buttonLayout);
         currentCommandTextView = findViewById(R.id.currentCommandText);
+        scoreTextView = findViewById(R.id.scoreText); // To display the score
 
         upButton = findViewById(R.id.upButton);
         downButton = findViewById(R.id.downButton);
@@ -53,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String currentCommand = currentCommandSequence[commandIndex];
             if (CommandChecker.checkCommand(currentCommand, viewId)) {
                 Log.d(TAG, "Correct button clicked for command: " + currentCommand);
+                score += 10; // Incrementing by 10
+                scoreTextView.setText(String.valueOf(score)); // Displaying the text
                 commandIndex++;
                 if (commandIndex >= currentCommandSequence.length) {
                     loadRandomCommandSequence(); // Load next array
@@ -90,20 +94,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void navigateToEndScreen() {
         Intent intent = new Intent(this, GameoverActivity.class);
+        intent.putExtra("SCORE", score); // Bringing the score to end screen
         startActivity(intent);
         finish();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
