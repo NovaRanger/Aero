@@ -11,16 +11,14 @@
 
     <ImageView
         android:id="@+id/astronaut"
-        android:layout_width="196dp"
-        android:layout_height="193dp"
+        android:layout_width="152dp"
+        android:layout_height="115dp"
         android:contentDescription="@string/cd_astronaut"
         android:src="@drawable/start_astronaut"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/aeroIcon"
@@ -37,27 +35,53 @@
 
     <Button
         android:id="@+id/Dark_Theme"
-        android:layout_width="227dp"
-        android:layout_height="97dp"
-        android:text="Dark Theme"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:text="Default"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
-        android:id="@+id/Light_Theme"
-        android:layout_width="227dp"
-        android:layout_height="97dp"
-        android:text="Light Theme"
+        android:id="@+id/PinkButton"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:text="Pink"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.672" />
+
+    <Button
+        android:id="@+id/YellowButton"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:text="Yellow"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dark_Theme"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/GreenButton"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:text="Green"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
 </androidx.constraintlayout.widget.ConstraintLayout>
