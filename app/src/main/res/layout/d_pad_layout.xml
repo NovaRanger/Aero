@@ -94,7 +94,8 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/end_score" />
 
     <!-- Adding the Score text -->
@@ -110,7 +111,7 @@
         android:layout_marginBottom="0dp"
         android:text="0"
         android:textColor="@color/white"
-        android:textSize="80sp"
+        android:textSize="70sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
