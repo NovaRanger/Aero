@@ -99,6 +99,24 @@
 
     </LinearLayout>
 
+    <!-- Adding the Score logo -->
+    <ImageView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:layout_below="@+id/buttonLayout"
+        android:src="@drawable/end_score"/>
+
+    <!-- Adding the Score text -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/score"
+        android:text="0" />
+
 </RelativeLayout>
 
 
