@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/playButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:src="@drawable/start_button_help"
+        android:src="@drawable/start_button_settings"
         android:contentDescription="@string/cd_help"
         android:onClick="onHelpClick"
         />
