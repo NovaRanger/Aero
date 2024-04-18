@@ -34,16 +34,8 @@ public class HelpActivity extends AppCompatActivity {
 
         });
 
-        ImageView color = findViewById(R.id.colorButton);
-        Color.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent = new Intent(HelpActivity.this,ColorActivity.class);
-                startActivity(intent);
 
-            }
-        });
     }
 
     public void onColorClick(View view){
