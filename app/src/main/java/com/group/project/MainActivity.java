@@ -1,7 +1,14 @@
 package com.group.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.style.ImageSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -82,14 +89,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     private void displayCurrentCommand() {
-        StringBuilder commandStringBuilder = new StringBuilder();
+        SpannableStringBuilder commandStringBuilder = new SpannableStringBuilder();
+
         for (int i = commandIndex; i < currentCommandSequence.length; i++) {
-            commandStringBuilder.append(currentCommandSequence[i]);
-            commandStringBuilder.append(" "); // Add space between commands
+            String commandName = currentCommandSequence[i];
+            int resourceId = getResources().getIdentifier("command_" + commandName.toLowerCase(), "drawable", getPackageName());
+            if (resourceId != 0) {
+                @SuppressLint("UseCompatLoadingForDrawables") Drawable drawable = getResources().getDrawable(resourceId);
+                drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
+                ImageSpan imageSpan = new ImageSpan(drawable, ImageSpan.ALIGN_BOTTOM);
+                SpannableString spannableString = new SpannableString(commandName);
+                spannableString.setSpan(imageSpan, 0, commandName.length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+                commandStringBuilder.append(spannableString).append(" ");
+            }
         }
-        String currentCommands = commandStringBuilder.toString().trim(); // Remove trailing space
-        currentCommandTextView.setText(currentCommands);
+
+        currentCommandTextView.setText(commandStringBuilder);
     }
+
 
 
     private void navigateToEndScreen() {

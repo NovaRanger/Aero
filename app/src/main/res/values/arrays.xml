@@ -16,15 +16,24 @@
         <item>LEFT</item>
     </array>
     <array name="command_sequence_2">
+        <item>UP</item>
+        <item>DOWN</item>
+        <item>DOWN</item>
         <item>RIGHT</item>
         <item>LEFT</item>
     </array>
     <array name="command_sequence_3">
-        <item>LEFT</item>
+        <item>UP</item>
+        <item>DOWN</item>
+        <item>DOWN</item>
+        <item>RIGHT</item>
         <item>LEFT</item>
     </array>
     <array name="command_sequence_4">
+        <item>UP</item>
         <item>DOWN</item>
+        <item>DOWN</item>
+        <item>RIGHT</item>
         <item>LEFT</item>
     </array>
     <array name="command_sequence_5">
