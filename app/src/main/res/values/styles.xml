@@ -17,4 +17,19 @@
         <item name="android:paddingTop">20dp</item>
         <item name="android:paddingBottom">20dp</item>
     </style>
+
+    <!-- STYLES FOR ARROWS -->
+    <style name="Yellow_Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/yellowArrow</item>
+    </style>
+
+    <style name="Pink_Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pinkArrow</item>
+    </style>
+
+    <style name="Green_Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/greenArrow</item>
+    </style>
+
+
 </resources>

@@ -24,25 +24,25 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".HelpActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".GameoverActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <activity
             android:name=".SettingsActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <activity
             android:name=".AboutActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <activity
             android:name=".ColorActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
     </application>
 
