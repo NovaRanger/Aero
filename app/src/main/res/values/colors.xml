@@ -6,4 +6,7 @@
     <color name="orangeButton">#F77B57</color>
     <color name="arrowColor">#3DFF15</color>
     <color name="backgroundColor">#151938</color>
+    <color name="yellowArrow">#E5B900</color>
+    <color name="pinkArrow">#FF00F9</color>
+    <color name="greenArrow">#0D8410</color>
 </resources>
