@@ -65,14 +65,13 @@
         app:layout_constraintVertical_bias="0.519"
         android:onClick="onColorClick"/>
 
-    <Button
+    <ImageView
         android:id="@+id/settingsButton"
         android:layout_width="195dp"
         android:layout_height="74dp"
         android:layout_margin="30dp"
         style="@style/StartPageButton"
-        android:text="Settings"
-        android:textSize="24dp"
+        android:src="@drawable/start_button_help"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

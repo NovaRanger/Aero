@@ -20,31 +20,20 @@ public class HelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help_activity);
 
-        settings=findViewById(R.id.settingsButton);
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(HelpActivity.this, SettingsActivity.class);
-                startActivity(intent);
-
-
-            }
-
-
-        });
-
-
-
-    }
-
-    public void onColorClick(View view){
-        Intent intent = new Intent(this, ColorActivity.class);
-        startActivity(intent);
     }
 
     public void onAboutClick(View view){
         Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+    public void onColorClick(View view) {
+        Intent intent = new Intent(this, ColorActivity.class);
+        startActivity(intent);
+    }
+
+    public void onSettingsClick(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 }

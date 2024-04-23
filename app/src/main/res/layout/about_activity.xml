@@ -23,23 +23,30 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="412dp"
-        android:layout_height="478dp"
-        android:text="Aero is an app designed and developed by
-students from the University of North Georgia. Desgined and developed in
-the spring of 2024 as a project for their Mobile Applications
-class by developers Ivan Turcios, Elizabeth Sexton, Helen Viec,
-and Conor Smith."
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/orange_rectangle"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creditsHeader"
+        android:contentDescription="@string/rectangle" />
 
+    <TextView
+        android:id="@+id/creditsText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
         android:textStyle="normal"
-        android:textAlignment="center"
-        android:textColor="#ffbf00"
-        android:textSize="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/creditsHeader"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
