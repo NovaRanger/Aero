@@ -30,7 +30,9 @@
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/colorHeader" />
+        app:layout_constraintTop_toBottomOf="@id/colorHeader"
+        android:contentDescription="@string/default_color"
+        />
 
     <ImageButton
         android:id="@+id/YellowButton"
@@ -41,7 +43,9 @@
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/defaultButton" />
+        app:layout_constraintTop_toBottomOf="@id/defaultButton"
+        android:contentDescription="@string/yellow"
+        />
 
     <ImageButton
         android:id="@+id/PinkButton"
@@ -52,7 +56,9 @@
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/YellowButton" />
+        app:layout_constraintTop_toBottomOf="@id/YellowButton"
+        android:contentDescription="@string/pink"
+        />
 
     <ImageButton
         android:id="@+id/GreenButton"
@@ -63,7 +69,9 @@
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/PinkButton" />
+        app:layout_constraintTop_toBottomOf="@id/PinkButton"
+        android:contentDescription="@string/pink"
+        />
 
 
 

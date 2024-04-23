@@ -18,5 +18,11 @@
     <string name="Score" />
     <string name="rectangle"/>
     <string name="how_to_play"/>
+    <string name="default_color"/>
+    <string name="yellow"/>
+    <string name="pink"/>
+    <string name="green"/>
+
+
 
 </resources>
