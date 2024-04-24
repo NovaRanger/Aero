@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String currentCommand = currentCommandSequence[commandIndex];
             if (CommandChecker.checkCommand(currentCommand, viewId)) {
                 Log.d(TAG, "Correct button clicked for command: " + currentCommand);
+                //Changed score += 10 to the line below - Conor
                 incrementScore(10); // Incrementing by 10
                 scoreTextView.setText(String.valueOf(score)); // Displaying the text
                 commandIndex++;
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    //Conor's additions
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt("score", score);
         super.onSaveInstanceState(outState);
@@ -157,6 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         updateScore();
         saveScore();
     }
+    //End of Conor's Additions
 
 
 
@@ -167,6 +170,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         finish();
     }
 
-    //Conor's Code
+
 
 }

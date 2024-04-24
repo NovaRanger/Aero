@@ -19,6 +19,7 @@ public class GameoverActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int score = intent.getIntExtra("SCORE", 0);
 
+
         TextView scoreText = findViewById(R.id.scoreText);
         scoreText.setText(String.valueOf(score));
     }
@@ -32,11 +33,17 @@ public class GameoverActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt("score", 0);
         editor.apply();
+        //End of Conor's additions
 
     }
 
     public void onMenuClick(View view) {
         Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
+
+        SharedPreferences preferences = getSharedPreferences("score_pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("score", 0);
+        editor.apply();
     }
 }
