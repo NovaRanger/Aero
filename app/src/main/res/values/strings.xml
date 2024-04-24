@@ -2,7 +2,7 @@
     <string name="app_name">AERO</string>
     <!--text used within app-->
     <string name="help_instructions">Repeat the pattern of the arrows displayed on top of the screen. If you get one wrong, the game will end and display your score.</string>
-    <string name="credits">Aero is an app designed and developed by students from the University of North Georgia. Designed and developed in the spring of 2024 as a project for their Mobile Applications class by developers Ivan Turcios, Elizabeth Sexton, Helen Viec, and Conor Smith."</string>
+    <string name="credits">Aero is an app designed and developed by students from the University of North Georgia. Designed and developed in the spring of 2024 as a project for their Mobile Applications class by developers Ivan Turcios, Elisabeth Sexton, Helen Viec, and Conor Smith."</string>
 
     <!--content descriptions-->
     <string name="cd_aero">aero logo</string>

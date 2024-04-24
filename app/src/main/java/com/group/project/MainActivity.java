@@ -53,6 +53,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         loadRandomCommandSequence();
         displayCurrentCommand();
+
+        //Conor Code
+        int themeId = getIntent().getIntExtra("Yellow_theme", R.style.Yellow_Theme);
+        setTheme(themeId);
+
+
+
+
     }
 
     @Override
