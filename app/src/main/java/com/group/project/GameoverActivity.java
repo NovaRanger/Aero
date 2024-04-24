@@ -1,5 +1,6 @@
 package com.group.project;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -25,6 +26,13 @@ public class GameoverActivity extends AppCompatActivity {
     public void onReplayClick(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
+        //Conor's Additions
+        SharedPreferences preferences = getSharedPreferences("score_pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("score", 0);
+        editor.apply();
+
     }
 
     public void onMenuClick(View view) {

@@ -3,6 +3,7 @@ package com.group.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -22,6 +23,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
+
     private static final String TAG = "MainActivity";
 
     private LinearLayout buttonLayout;
@@ -36,6 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_pad_layout);
+
+
+
+
+
 
         // Making it to where it grabs the layout color changes
 
@@ -60,9 +68,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loadRandomCommandSequence();
         displayCurrentCommand();
 
-        //Conor Code
-        int themeId = getIntent().getIntExtra("Yellow_theme", R.style.Yellow_Theme);
-        setTheme(themeId);
+    if (savedInstanceState != null) {
+        score = savedInstanceState.getInt("score", 0);
+        updateScore();
+    } else {
+        loadScore();
+    }
 
     }
 
@@ -73,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String currentCommand = currentCommandSequence[commandIndex];
             if (CommandChecker.checkCommand(currentCommand, viewId)) {
                 Log.d(TAG, "Correct button clicked for command: " + currentCommand);
-                score += 10; // Incrementing by 10
+                incrementScore(10); // Incrementing by 10
                 scoreTextView.setText(String.valueOf(score)); // Displaying the text
                 commandIndex++;
                 if (commandIndex >= currentCommandSequence.length) {
@@ -119,6 +130,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("score", score);
+        super.onSaveInstanceState(outState);
+    }
+
+    private void loadScore() {
+        SharedPreferences preferences = getSharedPreferences("score_pref",MODE_PRIVATE);
+        score = preferences.getInt("score", 0);
+        updateScore();
+    }
+
+    private void saveScore(){
+        SharedPreferences preferences = getSharedPreferences("score_pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("score", score);
+        editor.apply();
+    }
+
+    public void updateScore(){
+        scoreTextView.setText(String.valueOf(score));
+    }
+
+    private void incrementScore(int incrementValue) {
+        score += incrementValue;
+        updateScore();
+        saveScore();
+    }
+
+
 
     private void navigateToEndScreen() {
         Intent intent = new Intent(this, GameoverActivity.class);
@@ -126,4 +166,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
         finish();
     }
+
+    //Conor's Code
+
 }
