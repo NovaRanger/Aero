@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int themeId = getIntent().getIntExtra("Yellow_theme", R.style.Yellow_Theme);
         setTheme(themeId);
 
-
     }
 
     @Override
