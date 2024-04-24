@@ -42,6 +42,13 @@ public class ColorActivity extends AppCompatActivity {
             }
         });
 
+        DefaultButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                defaultTheme();
+            }
+        });
+
 
 //            private void startMainActivity() {
 //                Intent intent = new Intent(ColorActivity.this, MainActivity.class);
@@ -52,6 +59,10 @@ public class ColorActivity extends AppCompatActivity {
         Intent intent = new Intent(ColorActivity.this, MainActivity.class);
         intent.putExtra("themeId", themeId);
         startActivity(intent);
+    }
+
+    public void defaultTheme(){
+        changeTheme(0);
     }
 }
 
