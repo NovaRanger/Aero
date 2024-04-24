@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void displayCurrentCommand() {
         SpannableStringBuilder commandStringBuilder = new SpannableStringBuilder();
 
+
         for (int i = commandIndex; i < currentCommandSequence.length; i++) {
             String commandName = currentCommandSequence[i];
             int resourceId = getResources().getIdentifier("command_" + commandName.toLowerCase(), "drawable", getPackageName());
