@@ -48,9 +48,9 @@
         <!-- Up Button -->
         <Button
             android:id="@+id/upButton"
-            android:layout_marginLeft="125dp"
             android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="130dp"
             android:background="@drawable/key_up_button"
             android:text="UP" />
 
@@ -63,15 +63,16 @@
             <Button
                 android:id="@+id/leftButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginRight="75dp"
                 android:layout_weight="1"
                 android:background="@drawable/key_left_button"
-                android:text="LEFT"
-                android:layout_marginRight="75dp"/>
+                android:text="LEFT" />
+
             <Button
                 android:id="@+id/rightButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="130dp"
                 android:layout_weight="1"
                 android:background="@drawable/key_right_button"
                 android:text="RIGHT" />
@@ -81,9 +82,9 @@
         <!-- Down Button -->
         <Button
             android:id="@+id/downButton"
-            android:layout_marginLeft="125dp"
             android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="130dp"
             android:background="@drawable/key_down_button"
             android:text="DOWN" />
 
@@ -92,14 +93,14 @@
     <!-- Adding the Score logo -->
     <ImageView
         android:id="@+id/score"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="0dp"
-        android:layout_centerHorizontal="true"
         android:src="@drawable/end_score" />
 
     <!-- Adding the Score text -->
