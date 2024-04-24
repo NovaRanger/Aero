@@ -43,9 +43,6 @@ public class ColorActivity extends AppCompatActivity {
         });
 
 
-
-
-
 //            private void startMainActivity() {
 //                Intent intent = new Intent(ColorActivity.this, MainActivity.class);
 //                startActivity(intent);
