@@ -14,12 +14,11 @@ public class ColorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.color_activity);
 
-
         ImageButton defaultButton = findViewById(R.id.defaultButton);
         defaultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.d_pad_layout);
+                startMainActivityWithLayout(R.layout.d_pad_layout);
             }
         });
 
@@ -27,7 +26,7 @@ public class ColorActivity extends AppCompatActivity {
         yellowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.d_pad_layout_yellow);
+                startMainActivityWithLayout(R.layout.d_pad_layout_yellow);
             }
         });
 
@@ -35,7 +34,7 @@ public class ColorActivity extends AppCompatActivity {
         pinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.d_pad_layout_pink);
+                startMainActivityWithLayout(R.layout.d_pad_layout_pink);
             }
         });
 
@@ -43,9 +42,14 @@ public class ColorActivity extends AppCompatActivity {
         greenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.d_pad_layout_green);
+                startMainActivityWithLayout(R.layout.d_pad_layout_green);
             }
         });
     }
-}
 
+    private void startMainActivityWithLayout(int layoutId) {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("layoutId", layoutId);
+        startActivity(intent);
+    }
+}
