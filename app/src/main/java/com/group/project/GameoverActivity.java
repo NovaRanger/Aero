@@ -41,9 +41,9 @@ public class GameoverActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
 
-        SharedPreferences preferences = getSharedPreferences("score_pref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putInt("score", 0);
-        editor.apply();
+//        SharedPreferences preferences = getSharedPreferences("score_pref", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = preferences.edit();
+//        editor.putInt("score", 0);
+//        editor.apply();
     }
 }
