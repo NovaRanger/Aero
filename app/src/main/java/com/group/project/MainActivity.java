@@ -40,11 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_pad_layout);
 
-
-
-
-
-
         // Making it to where it grabs the layout color changes
 
         Intent intent = getIntent();
